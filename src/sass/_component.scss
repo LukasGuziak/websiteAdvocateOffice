@@ -1,0 +1,55 @@
+.btn-style,
+.btn-style2 {
+	background: transparent;
+	font-family: 'Nunito', sans-serif;
+	padding: 0.7em 2em;
+	color: white;
+	border: 1px solid white;
+	border-radius: 30px;
+	font-size: 1.6rem;
+	letter-spacing: 1px;
+	transition: all 0.3s;
+	transition-property: color, background-color, transform;
+
+	a {
+		text-decoration: none;
+		color: white;
+		transition: color 0.3s;
+	}
+	i {
+		padding-right: 1em;
+	}
+}
+
+.btn-style:hover {
+	background-color: white;
+	color: black;
+	a {
+		color: black;
+	}
+}
+.btn-style2:hover {
+	transform: scale(1.1);
+}
+
+.section {
+	// margin: 2em 0;
+	padding: 6em 0.5em 3em;
+	&-title {
+		text-transform: uppercase;
+		text-align: center;
+		font-size: 2.6rem;
+		font-weight: 400;
+	}
+	&-underline {
+		height: 4px;
+		width: 200px;
+		background-color: $main-color;
+		margin: 0 auto 3.5em;
+	}
+}
+
+// section space to DELETE
+.section-space {
+	height: 100vh;
+}
