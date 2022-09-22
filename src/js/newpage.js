@@ -2,6 +2,8 @@ const burgerBtn = document.querySelector('.hamburger');
 const navMobile = document.querySelector('.nav-mobile');
 const navSection = document.querySelector('.navigation');
 
+const footerYear = document.querySelector('.footer__year');
+
 // const headerSection = document.querySelector('#header');
 // const officeSection = document.querySelector('#office');
 // const specSection = document.querySelector('#specjalizations');
@@ -20,6 +22,12 @@ const addNavShadow = () => {
 	}
 };
 
+const hendleCurrentYear = () => {
+	const year = new Date().getFullYear();
+	footerYear.innerText = year;
+};
+
+hendleCurrentYear();
 
 burgerBtn.addEventListener('click', handleNav);
 navMobile.addEventListener('click', handleNav);
