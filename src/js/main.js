@@ -6,6 +6,8 @@ const headerSection = document.querySelector('#header');
 const officeSection = document.querySelector('#office');
 const specSection = document.querySelector('#specjalizations');
 const contactSection = document.querySelector('#contact');
+const footerYear = document.querySelector('.footer__year');
+
 
 const handleNav = () => {
 	burgerBtn.classList.toggle('is-active');
@@ -55,6 +57,13 @@ const scrollSpy = () => {
 		document.querySelector('.navContact').classList.remove('active');
 	}
 };
+
+const hendleCurrentYear = () => {
+	const year = new Date().getFullYear();
+	footerYear.innerText = year;
+};
+
+hendleCurrentYear();
 
 burgerBtn.addEventListener('click', handleNav);
 navMobile.addEventListener('click', handleNav);
